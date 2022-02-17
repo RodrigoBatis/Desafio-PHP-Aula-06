@@ -19,7 +19,7 @@
             if( $numeroInicial > $numeroFinal){
                 echo(ERRO_MSG_INICIAL_MAIOR_FINAL);
             }else{
-                
+                $arrayVerificador = verificarNumeros($numeroInicial, $numeroFinal);
             }
         }
 
@@ -84,17 +84,21 @@
             <fieldset id="fieldPares">
             <legend>N° Pares</legend>
             <div id="nPares">
-              
+                <?= count($arrayVerificador) != 0 ? imprimeArray($arrayVerificador["Pares"]) : null ?>
             </div>
+            <span class="quantidadePares">Quantidade de Pares: <b><?= count($arrayVerificador) != 0 ? count($arrayVerificador["Pares"]) : null; ?></b></span>
             </fieldset>
+            
             <br>
             <br>
             <fieldset id="fieldImpares">
             <legend>N° Impares</legend>
             <div id="nImpares">
-              
+                <?= count($arrayVerificador) != 0 ? imprimeArray($arrayVerificador["Impares"]) : null ?>
             </div>
+            <span class="quantidadeImpares">Quantidade de Impares: <b><?= count($arrayVerificador) != 0 ? count($arrayVerificador['Impares']) : null; ?></b></span>
           </fieldset>
+          
         </div>
     </main>
 </body>
