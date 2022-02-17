@@ -3,7 +3,8 @@ main{
     height: 50rem;
     width: 75rem;
     margin: 0 auto;
-    background-color: rgba(160, 160, 160, 0.667);
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(168,166,166,1) 52%, rgba(0,0,0,1) 100%);
 }
 
 #conteudo {
@@ -45,9 +46,11 @@ main{
     justify-content: center;
     margin-left: 50rem;
     margin-top: -3.5rem;
+    height: 2rem;
+    width: 5rem;
 }
 
-#fieldPares{
+#containerPares{
     display: flex;
     width: 20rem;
     height: 10rem;
@@ -55,15 +58,15 @@ main{
     margin-top: 20rem;
 }
 
-#fieldPares > #nPares{
+#containerPares > #nPares{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     width: 20rem;
     height: 10rem;
-    color: black;
-    background-color: blue;
+    color: white;
+    background-color: #a8a6a6; 
     box-sizing: border-box;
     padding-top: 2px;
     font-family: monospace;
@@ -73,7 +76,7 @@ main{
     overflow-x: hidden;
 }
 
-#fieldImpares{
+#containerImpares{
     display: flex;
     width: 20rem;
     height: 10rem;
@@ -81,15 +84,15 @@ main{
     margin-top: -12rem;
 }
 
-#fieldImpares > #nImpares{
+#containerImpares > #nImpares{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     width: 20rem;
     height: 10rem;
-    color: black;
-    background-color: red;
+    color: white;
+    background-color: #a8a6a6;
     box-sizing: border-box;
     padding-top: 2px;
     font-family: monospace;

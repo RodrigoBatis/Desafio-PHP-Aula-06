@@ -6,27 +6,24 @@
 
     $numeroInicial = (int) 0;
     $numeroFinal   = (int) 0;
-    $arrayVerificador = [];
+    $array = [];
 
     if (isset($_POST["btnVerificar"])){
 
-        if($_POST["sltInicio"] == "" || $_POST["sltFinal"]){
+        if(!isset($_POST["sltInicio"]) || !isset($_POST["sltFinal"])){
             echo(ERRO_MSG_CAIXA_VAZIA);
         }else{
             $numeroInicial = $_POST["sltInicio"];
             $numeroFinal   = $_POST["sltFinal"];
     
-            if( $numeroInicial > $numeroFinal){
+            if( $numeroInicial >= $numeroFinal){
                 echo(ERRO_MSG_INICIAL_MAIOR_FINAL);
             }else{
-                $arrayVerificador = verificarNumeros($numeroInicial, $numeroFinal);
+                $array = verificarNumeros($numeroInicial, $numeroFinal);
             }
         }
 
     }
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -81,24 +78,24 @@
                 <input type="submit" name="btnVerificar" value="Verificar"><br/>
             </div>
 
-            <fieldset id="fieldPares">
+            <fieldset id="containerPares">
             <legend>N° Pares</legend>
             <div id="nPares">
-                <?= count($arrayVerificador) != 0 ? imprimeArray($arrayVerificador["Pares"]) : null ?>
+                <?php count($array) != 0 ? imprimeArray($array['Pares']) : null ?>
             </div>
-            <span class="quantidadePares">Quantidade de Pares: <b><?= count($arrayVerificador) != 0 ? count($arrayVerificador["Pares"]) : null; ?></b></span>
+            <span class="quantidadePares">Quantidade de Pares: <b><?= count($array) != 0 ? count($array['Pares']) : null; ?></b></span>
             </fieldset>
-            
             <br>
             <br>
-            <fieldset id="fieldImpares">
+            <fieldset id="containerImpares">
             <legend>N° Impares</legend>
             <div id="nImpares">
-                <?= count($arrayVerificador) != 0 ? imprimeArray($arrayVerificador["Impares"]) : null ?>
+                <?php count($array) != 0 ? imprimeArray($array['Impares']) : null ?>
             </div>
-            <span class="quantidadeImpares">Quantidade de Impares: <b><?= count($arrayVerificador) != 0 ? count($arrayVerificador['Impares']) : null; ?></b></span>
+            <span class="quantidadeImpares">Quantidade de Impares: <b><?= count($array) != 0 ? count($array['Impares']) : null; ?></b></span>
           </fieldset>
           
+       
         </div>
     </main>
 </body>
