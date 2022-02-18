@@ -77,11 +77,11 @@
             <div id="btnVerificar">
                 <input type="submit" name="btnVerificar" value="Verificar"><br/>
             </div>
-
+                
             <fieldset id="containerPares">
             <legend>N° Pares</legend>
             <div id="nPares">
-                <?php count($array) != 0 ? imprimeArray($array['Pares']) : null ?>
+               <?= count($array) != 0 ? imprimeArray($array['Pares']) : null ?>
             </div>
             <span class="quantidadePares">Quantidade de Pares: <b><?= count($array) != 0 ? count($array['Pares']) : null; ?></b></span>
             </fieldset>
@@ -90,7 +90,7 @@
             <fieldset id="containerImpares">
             <legend>N° Impares</legend>
             <div id="nImpares">
-                <?php count($array) != 0 ? imprimeArray($array['Impares']) : null ?>
+                <?= count($array) != 0 ? imprimeArray($array['Impares']) : null ?>
             </div>
             <span class="quantidadeImpares">Quantidade de Impares: <b><?= count($array) != 0 ? count($array['Impares']) : null; ?></b></span>
           </fieldset>
