@@ -36,6 +36,7 @@ main{
     height: 11.5625rem;
     padding-top: 1.25rem;
     box-sizing: border-box;
+    color: #ffffff;
   }
 
   input {
