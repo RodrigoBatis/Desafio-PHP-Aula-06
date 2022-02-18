@@ -50,9 +50,9 @@ main{
     align-items: center;
     justify-content: flex-start;
     width: 24.5rem;
-    height: 20rem;
+    height: 10rem;
     color: black;
-    background-color: cornflowerblue;
+    background-color: white;
     box-sizing: border-box;
     padding-top: 2px;
     font-family: monospace;

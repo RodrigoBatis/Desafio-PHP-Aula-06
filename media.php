@@ -61,6 +61,7 @@ if(isset($_POST["btnCalc"])){
             </ul>
         </nav>
             </header>
+            
         <div id="conteudo">
             
             <div id="titulo">
