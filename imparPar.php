@@ -56,7 +56,7 @@
             <div id="titulo">
                <h1> Pares e Impar</h1>
             </div>
-            <form action="frmImparPar" method="POST" action="imparPar.php"></form>
+            <form  id="formDeTudo" name="frmImparPar" method="POST" action="imparPar.php">
             <br>
             <div id="formInicial">
                 N° Inicial: 
@@ -77,7 +77,8 @@
             <div id="btnVerificar">
                 <input type="submit" name="btnVerificar" value="Verificar"><br/>
             </div>
-                
+            </form>
+               
             <fieldset id="containerPares">
             <legend>N° Pares</legend>
             <div id="nPares">

@@ -6,6 +6,18 @@
     
   }
   
+  body{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: right top;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 52%, rgba(0,0,0,1) 100%);
+  }
+
   #conteudo {
     width: 400px;
     height: 300px;
@@ -31,6 +43,7 @@
     height: 185px;
     padding-top: 20px;
     box-sizing: border-box;
+    color: #ffffff;
   }
   input {
     margin-bottom: 10px;

@@ -1,5 +1,4 @@
 <?php
-$array = [];
 
 function verificarNumeros ( $numInicial, $numFinal){
 
@@ -17,5 +16,5 @@ function verificarNumeros ( $numInicial, $numFinal){
 
     
 }
-print_r($array);
+
 ?>

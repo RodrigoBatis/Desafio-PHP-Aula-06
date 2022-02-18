@@ -11,6 +11,19 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(168,166,166,1) 52%, r
     width: 100%;
 }
 
+#conteudo > #formDeTudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    color: white;
+}
+
+.btnVerificar{
+    padding: 20rem;
+}
+
 #conteudo > #titulo {
     display: flex;
     justify-content: center;
@@ -40,15 +53,6 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(168,166,166,1) 52%, r
     font-size: 2rem;
 }
 
-#conteudo > #btnVerificar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50rem;
-    margin-top: -3.5rem;
-    height: 2rem;
-    width: 5rem;
-}
 
 #containerPares{
     display: flex;
@@ -56,6 +60,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(168,166,166,1) 52%, r
     height: 10rem;
     margin-left: 10rem;
     margin-top: 20rem;
+    color: white;
 }
 
 #containerPares > #nPares{
@@ -82,6 +87,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(168,166,166,1) 52%, r
     height: 10rem;
     margin-left: 45rem;
     margin-top: -12rem;
+    color: white;
 }
 
 #containerImpares > #nImpares{
