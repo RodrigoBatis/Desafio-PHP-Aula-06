@@ -15,5 +15,9 @@ define("ERRO_MSG_DIVISAO_ZERO", "<script> alert('Não é possivel fazer uma divi
 
 define("ERRO_MSG_OPERACAO_CALCULO", "<script>window.alert('Favor escolher uma operação válida!!!');</script>");
 
-define("ERRO_MSG_INICIAL_MAIOR_FINAL", "<script>window.alert('Para que a Verificação aconteça coloque o valor inicial menor que o final')</script>")
+define("ERRO_MSG_INICIAL_MAIOR_FINAL", "<script>window.alert('Para que a Verificação aconteça coloque o valor inicial menor que o final!!!')</script>");
+
+define("ERRO_MSG_NOTA_MAIOR_QUE_O_PERMITIDO", "<script>window.alert('Não é permitido numeros maiores que 10!!!')</script>");
+
+define("ERRO_MSM_MULTIPLICACAO_ZERO", "<script>window.alert('Não é possível fazer uma tabuada do 0!!!')</script>")
 ?>

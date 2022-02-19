@@ -32,9 +32,13 @@ if(isset($_POST["btnCalc"])){
             echo(ERRO_MSG_CARACTER_INVALIDO_TEXTO);
 
         }else{
+            if($nota1 > 10 || $nota2 > 10 || $nota3 > 10 || $nota4 > 10){
+                echo(ERRO_MSG_NOTA_MAIOR_QUE_O_PERMITIDO);
+            }else{
             // FAZENDO O CALCULO DA MEDIA
 
             $resultado= calculoMedia($nota1,$nota2,$nota3,$nota4,$media);
+            }
         }
     }
 }

@@ -16,7 +16,7 @@ function calcularMultiplicacao($numero1, $numero2, $resultadoMultiplicacao, $con
 
     for($i; $i<= $num2; $i++) {
         if($num2 == 0 ){
-            echo (ERRO_MSG_DIVISAO_ZERO);
+            echo (ERRO_MSM_MULTIPLICACAO_ZERO);
           }else{
         $result = $num1 * $i;
 

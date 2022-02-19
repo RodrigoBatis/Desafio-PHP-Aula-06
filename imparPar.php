@@ -63,6 +63,7 @@
                 <select name="sltInicio" id="nInicial">
                     <option value="">Por favor selecione um número</option>
                     <?= CriarOption(0 , 500, $numeroInicial)?>
+                    value = <?= $numeroInicial?>
                 </select>
                 
             </div>
@@ -72,6 +73,7 @@
                 <select name="sltFinal" id="nFinal">
                 <option value="">Por favor selecione um número</option>
                 <?= CriarOption(100, 1000, $numeroFinal)?>
+                value = <?= $numeroFinal?>
                 </select>
             </div>
             <div id="btnVerificar">
